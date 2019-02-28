@@ -1,5 +1,5 @@
 ---
-Title:
+Title: Home
 layout: page
 permalink: //
 ---
