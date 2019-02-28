@@ -1,7 +1,6 @@
 ---
-layout: "page"
+layout: "index"
 Title: Home
-permalink: /home/
 ---
 ## About
 TEST2 I'm a current junior at Temple University studying Computer Science.
