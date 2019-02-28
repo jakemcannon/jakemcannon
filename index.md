@@ -2,7 +2,7 @@
 Title: Home
 layout: page
 ---
-## About
+
 I'm a current junior at Temple University studying Computer Science.
 
 TEST TEST
