@@ -1,5 +1,6 @@
 ---
 layout: page
+Title: Home
 ---
 ## About
 I'm a current junior at Temple University studying Computer Science.
