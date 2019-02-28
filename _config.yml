@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jake Cannon
-baseurl: "jakemcannon.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jakemcannon
 repository: https://github.com/jakemcannon
@@ -26,6 +26,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# navbar-links:
+#   Home: ""
+#   About Me: "about"
+#   Contact: "contact"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
