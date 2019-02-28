@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: "page"
 Title: Home
 ---
 ## About
-TEST I'm a current junior at Temple University studying Computer Science.
+TEST2 I'm a current junior at Temple University studying Computer Science.
 
 In class, I'm currently studying Data Structures and Discrete Math II. Outside of class, I'm currently studying <code>Java</code>, <code>Python</code>, TDD, and how to work with API's and databases.
 
