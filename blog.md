@@ -1,5 +1,5 @@
 ---
-layout: "home"
+layout: "index"
 title: Blog
 permalink: /blog/
 ---
