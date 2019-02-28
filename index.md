@@ -1,4 +1,5 @@
 ---
+Title: Home
 layout: page
 ---
 ## About
