@@ -3,5 +3,4 @@ layout: "page"
 title: "Projects"
 ---
 
-* YouTube Search
-* Philadelphia Public Trash Can Network
+Under construction. Come back soon.
