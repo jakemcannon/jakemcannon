@@ -3,7 +3,7 @@ Title:
 layout: page
 ---
 
-I'm a current junior at Temple University studying Computer Science.
+I'm a current junior at [Temple University](https://www.temple.edu/) working on a Bachelor's degree in Computer Science.
 
 TEST
 
