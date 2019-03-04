@@ -14,9 +14,50 @@ This Python script searches through the subtitles of a YouTube video and collect
 
 # How does it work & challenges
 
-Using youtube-dl it first downloads the subtitles and checks for the users desired keyword(s). If they exist then it collects all the timestamps of where that word occurred for every video and then using FFMPEG cuts them at that interval
+Using youtube-dl it first downloads the subtitles and checks for the users desired keyword(s). If they exist then it collects all the timestamps of where that word occurred for every video and then using FFmpeg cuts them at that interval.
 
-The biggest challenge was probably gluing everything together. Early on I had everything working in individual units of code. I could execute this on one YouTube link. The issue was OOP before I knew what OOP was. I am kind of to blame here for this. I knew OPP was probably an approach so solving this challenge but things got in the way. School was starting, work was getting busy, interview season was starting and I was reluctant to learn a new topic. So the project went on the back burner and after I learned OPP in class I wired this up in no time.
+One of the biggest challenges was reading a file that was full of duplicates and blank lines. The problem was that while I was finding my keywords and their timestamps I was also downloading duplicate clips; one for every duplicated line. In hindseight this was not such a difficult problem but at the time of making this I still had not officially taken any programming classes at my school. Thus I was stuck on it for quite some time. 
+
+```
+money boosted board pays me to talk
+about their boards in these videos they
+about their boards in these videos they
+ 
+about their boards in these videos they
+don't pay me at all see I am an adviser
+don't pay me at all see I am an adviser
+ 
+don't pay me at all see I am an adviser
+to boosted boards so like I like work
+to boosted boards so like I like work
+ 
+to boosted boards so like I like work
+for them it's like a it's like mostly
+for them it's like a it's like mostly
+```
+
+Here is how it was solved:
+
+We skip blanks lines and keep note of the previous line. Therefore if the keyword is in the current line and the current line is not the same as the previous line then we get the timestamp and download the clips. In other words, we only ever look at the first unique line and the subsequent duplicates will be skipped thus we wont downlaod any  duplicates of our desired clip.
+
+```python
+def download_clip(self, keyword):
+        prevline = ""
+        i = 0
+        for caption in webvtt.read(self.sub_name):
+            for line in caption.text.split("\n"):
+                if line == " ":
+                    continue
+                elif line != prevline and keyword in line:
+                    prevline = line
+                    output = self.clean_title()
+                    i+=1
+                    subprocess.call("ffmpeg -i $(youtube-dl -f 22+audio[ext=mp4]/mp4 --get-url " + self.name + ") -ss " + caption.start + " -to " + caption.end + " " + output + str(i) + ".mp4", shell=True)
+```
+
+
+
+Lastly the only other major hurdle in this project was glueing all the pieces together. As I mention I hadn't yet taken any programming classes but after taking Java 1 at my school I was quickly able to wire all the pieces together using Object-Oriented programming.
 
 # Quricks, Thoughts, and the Ugly 🤢
 
@@ -24,7 +65,7 @@ The biggest challenge was probably gluing everything together. Early on I had ev
 
 - I don't yet know much about computer hardware but I'm quite sure this is project is quite intensive for most computers.
 
-- Finally the below code is.. I'm not sure, probably not the best code. I'm calling a bash command within another bash command from python. Essentialy calling an FFMPEG call from Python but instead of supplying it a video file on your local machine I'm calling a YouTube -dl command. I tried to not have `shell = True` in the code but I couldn't find a good solution. The purpose for all of this to avoid having to have the user download the entire youtube video and then cur only a 5 second segment from another video.
+- Finally the below code is.. I'm not sure, probably not the best code. I'm calling a Bash command within another Bash command from Python. Essentialy calling an FFmpeg call from Python but instead of supplying it a video file on your local machine I'm calling a  youtube-dl command. I tried to not have `shell = True` in the code but I couldn't find a good solution. The purpose for all of this to avoid having to have the user download the entire YouTube video and then cur only a 5 second segment from another video.
 
   ```python
   subprocess.call("ffmpeg -i $(youtube-dl -f 22+audio[ext=mp4]/mp4 --get-url " + self.name + ") -ss " + caption.start + " -to " + caption.end + " " + output + str(i) + ".mp4", shell=True)
