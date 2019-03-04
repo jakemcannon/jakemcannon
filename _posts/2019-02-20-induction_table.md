@@ -16,10 +16,10 @@ This post may be updated in the future to cover recursive algorithms after I com
 | Problem                                                      | Source                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Show that if n is a positive integer then, 1 + 2 + … + n = $\frac{n(n+1)}{2}$](https://www.youtube.com/watch?v=4Qw9sc5kgvA&t=786s) | Rosen text book 5.1 Example 1                                |
-| $1^3$ + ​$2^3​$ + ... + ​$n^3​$ = ​${\frac{n^2(n+1)^2}{4}}​$       | [Organic Chem tutor video example](https://www.youtube.com/watch?v=tHNVX3e9zd0) |
-| $1^3$ + $2^3​$ + ... + $n^3​$ = ${\frac{n^2(n+1)^2}{4}}​$       | Organic Chem tutor Video                                     |
-| Let P(n) be the statment that $1^2$ + $2^2​$ + … + $n^2​$ = ${\frac{n(n+1)(2n+1)}{6}}​$ | Rosen text book Example 3                                    |
-| 1 + 2 + $2^2$ + .. + $2^{n-1}​$ = $2^n​$ -1                    | Organic Chem tutor                                           |
+| $1^3$ + $2^3​$ + ... + ​$n^3​$ = ​${\frac{n^2(n+1)^2}{4}}​$       | [Organic Chem tutor video example](https://www.youtube.com/watch?v=tHNVX3e9zd0) |
+|                                                              |                                                              |
+| Let P(n) be the statment that $1^2$ + $2^2$ + … + $n^2$ = ${\frac{n(n+1)(2n+1)}{6}}$ | Rosen text book Example 3                                    |
+| 1 + 2 + $2^2$ + .. + $2^{n-1}$ = $2^n$ -1                    | Organic Chem tutor                                           |
 | Prove that for ever natural number n $2^0$ + $2^1$ + … + $2^n$ = $2^{n+1}$ - 1 | How to prove it example 6.1.1                                |
 
 ### Inequaities
@@ -38,6 +38,15 @@ This post may be updated in the future to cover recursive algorithms after I com
 | ------------------------------------------------------------ | ------------------- |
 | Prove that $\forall$ n $\epsilon​$ in $\mathbb{N}​$   3 divides ($n^3​$ - n) | Rosen 5.1 Example 8 |
 | Use Mathematical Induction to prove that $7^{n+2}$ + $8^{2n+1}$ is divisible by 57 for every non-negative integer n | Rosen 5.1 Example 9 |
+
+
+
+### Factorial
+
+| Problems                                            | Source                                                     |
+| --------------------------------------------------- | ---------------------------------------------------------- |
+| Prove that 1 * 1! + 2 * 2! + … + n * n! = (n+1)! -1 | Practice exam, https://math.berkeley.edu/~bernd/hw5sol.pdf |
+|                                                     |                                                            |
 
 
 
