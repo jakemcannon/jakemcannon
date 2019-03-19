@@ -57,7 +57,7 @@ def download_clip(self, keyword):
 
 
 
-Lastly the only other major hurdle in this project was glueing all the pieces together. Early into the project I had managed to get this project working but only for one instance. I was struggling to get it working for multiple inputs. As I have mentioned I hadn't yet taken any programming classes but after taking Java 1 at my school I was quickly able to wire all the pieces together using Object-Oriented programming and complete this project.
+Lastly the only other major hurdle in this project was glueing all the pieces together. Early into the project I had managed to get this project working but only for one instance. I was struggling to get it working for multiple inputs. As I have mentioned I hadn't yet taken any programming classes but after taking Java 1 at my school I was quickly able to wire all the pieces together using Object-Oriented Programming and complete the project.
 
 # Random thoughts , details, etc. 
 
@@ -73,7 +73,7 @@ Lastly the only other major hurdle in this project was glueing all the pieces to
 
 # Conclusion
 
-Ultimately, I'm quite happy with the project. I'm most happy that is not a tutorial project and I have a project that I was also intersted in. 
+Ultimately, I'm quite happy with the project. I'm most happy that it is not a tutorial project and I have a project that I was also intersted in. 
 
 #### Things I learned
 
