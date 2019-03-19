@@ -4,9 +4,9 @@ title:  "YouTube Search"
 date:   2019-02-19 23:02:00 -0500
 categories: jekyll update
 ---
-My first blog post about my first project. This should be fun…
+My first blog post about my first project. 🙃
 
-In the summer of 2018 I had yet to take any programming classes at my school and I was starting to get anxious. So, like everyone on the internet learning to program, I decided to teach myself Python. I found many tutorials but I found [Berkley’s 61A](https://cs61a.org/) course the best. At this point I felt ready for a small side-project that I could sink my teeth into but I really did not want a tutorial project so I brainstormed ideas. I came up with an idea to automate the task of video editing, one of my hobbies, in Python.
+In the summer of 2018 I had yet to take any programming classes at my school and I was starting to get anxious. So, like everyone on the internet learning to program, I decided to teach myself Python. I found many tutorials but I found [Berkley’s 61A](https://cs61a.org/) course the most helpful. At this point I felt ready for a small side-project that I could sink my teeth into but I really did not want a tutorial project so I brainstormed ideas. I came up with an idea to automate the task of video editing, one of my hobbies, in Python.
 
 # So what does it do?
 
@@ -65,7 +65,7 @@ Lastly the only other major hurdle in this project was glueing all the pieces to
 
 - I don't yet know much about computer hardware but I'm quite sure this is project is quite intensive for most computers.
 
-- Finally the below code is.. I'm not sure, probably not the best code. I'm calling a Bash command within another Bash command from Python. Essentialy calling an FFmpeg call from Python but instead of supplying it a video file on your local machine I'm calling a  youtube-dl command. I tried to not have `shell = True` in the code but I couldn't find a good solution. The purpose for all of this to avoid having to have the user download the entire YouTube video and then cur only a 5 second segment from another video.
+- Finally the below code is.. I'm not sure, probably not the best code. I'm calling a Bash command within another Bash command from Python. Essentialy calling an FFmpeg call from Python but instead of supplying it a sorce video file on my local machine I'm calling a  youtube-dl command. I tried to not have `shell = True` in the code but I couldn't find a good solution. The purpose for all of this to avoid having the user download the entire YouTube video if they only need a 5 second segment from the video.
 
   ```python
   subprocess.call("ffmpeg -i $(youtube-dl -f 22+audio[ext=mp4]/mp4 --get-url " + self.name + ") -ss " + caption.start + " -to " + caption.end + " " + output + str(i) + ".mp4", shell=True)
