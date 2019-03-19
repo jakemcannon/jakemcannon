@@ -5,6 +5,8 @@ date:   2019-02-26 23:02:00 -0500
 mathjax: true
 ---
 
+**Under Construction - Come Back soon**
+
 This is a repository of some induction proofs along with tutorials that I have completed. Mathematical induction was frustrating me to no end so in an attempt to understand mathematical induction more seriously I completed all of these problems as well as made explanations for them. Below is the outline that my school followed for teaching mathematical induction in my discrete math course. It follows chapter 5 from [Discrete Mathematics and Its Applications 8th edition](http://www2.fiit.stuba.sk/~kvasnicka/Mathematics%20for%20Informatics/Rosen_Discrete_Mathematics_and_Its_Applications_7th_Edition.pdf).
 
 My hope is that these tutorials help you learn induction easier and more quickly then I did.
@@ -15,7 +17,7 @@ This post may be updated in the future to cover recursive algorithms after I com
 
 | Problem                                                      | Source                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Show that if n is a positive integer then, 1 + 2 + … + n = $\frac{n(n+1)}{2}$](https://www.youtube.com/watch?v=4Qw9sc5kgvA&t=786s) | Rosen text book 5.1 Example 1                                |
+| Show that if n is a positive integer then, 1 + 2 + … + n = $\frac{n(n+1)}{2}$ | Rosen text book 5.1 Example 1                                |
 | $1^3$ + ​$2^3​$ + ... + ​$n^3​$ = ​${\frac{n^2(n+1)^2}{4}}​$       | [Organic Chem tutor video example](https://www.youtube.com/watch?v=tHNVX3e9zd0) |
 | $1^3$ + $2^3​$ + ... + $n^3​$ = ${\frac{n^2(n+1)^2}{4}}​$       | Organic Chem tutor Video                                     |
 | Let P(n) be the statment that $1^2$ + $2^2​$ + … + $n^2​$ = ${\frac{n(n+1)(2n+1)}{6}}​$ | Rosen text book Example 3                                    |
