@@ -59,7 +59,7 @@ def download_clip(self, keyword):
 
 Lastly the only other major hurdle in this project was glueing all the pieces together. Early into the project I had managed to get this project working but only for one instance. I was struggling to get it working for multiple inputs. As I have mentioned I hadn't yet taken any programming classes but after taking Java 1 at my school I was quickly able to wire all the pieces together using Object-Oriented programming and complete this project.
 
-# Random thoughts , notes, 
+# Random thoughts , details, etc. 
 
 - <code>.srt</code> files are a lot cleaner that `.vtt` files if you need to read them with human eyes, however, YouYube-dl wont allow you to downlaod an srt file while skipping the download for the video. You can however do this with `.vtt` files.
 
