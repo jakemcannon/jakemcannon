@@ -1,16 +1,14 @@
 ---
 layout: post
-title:  "YouTube Search"
+title:  "YouTube Search (My first project!)"
 date:   2019-02-19 23:02:00 -0500
 categories: jekyll update
 ---
-My first blog post about my first project. 🙃
-
 In the summer of 2018 I had yet to take any programming classes at my school and I was starting to get anxious. So, like everyone on the internet learning to program, I decided to teach myself Python. I found many tutorials but I found [Berkley’s 61A](https://cs61a.org/) course the most helpful. At this point I felt ready for a small side-project that I could sink my teeth into but I really did not want a tutorial project so I brainstormed ideas. I came up with an idea to automate the task of video editing, one of my hobbies, in Python.
 
 # So what does it do?
 
-This Python script searches through the subtitles of a YouTube video and collects data on keywords. It also, and more importantly, downloads the video and cuts the video at the location - time interval - your keyword was found. My intent was to automate some of the more boring parts of video editing. Additionally, I noticed that this was a sort of trope often found in a certain genre of videos. That being documentaries, news segments, video essays, etc. The purpose was to fire off this script on a batch of YouTube links while I was working on more important segments of the video and the clips would then auto-generate. A tedious part of video editing is clipping the beggining and ending off of videos.
+This Python script searches through the subtitles of a YouTube video and collects data on keywords. Also, and more importantly, downloads the video and cuts the video at the location - time interval - your keyword was found. My intent was to automate some of the more boring parts of video editing. Additionally, I noticed that this was a sort of trope often found in a certain genre of videos. That being documentaries, news segments, video essays, etc. The purpose was to fire off this script on a batch of YouTube links while I was working on more important segments of the video and the clips would then auto-generate. A tedious part of video editing is clipping the beggining and ending off of videos.
 
 # How does it work & challenges
 
@@ -36,7 +34,7 @@ for them it's like a it's like mostly
 for them it's like a it's like mostly
 ```
 
-#### How it was solved:
+### How it was solved:
 
 We skip blanks lines and keep note of the previous line. Therefore if the keyword is in the current line and the current line is not the same as the previous line then we get the timestamp and download the clips. In other words, we only ever look at the first unique line and the subsequent duplicates will be skipped thus we wont downlaod any duplicates of our desired clip.
 
