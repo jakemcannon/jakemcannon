@@ -8,7 +8,7 @@ In the summer of 2018, I had yet to take any programming classes at my school an
 
 # So what does it do?
 
-This Python script searches through the subtitles of a YouTube video and collects data on keywords. Also, and more importantly, downloads the video and cuts the video at the location - time interval - your keyword was found. My intent was to automate some of the more boring parts of video editing. Additionally, I noticed that this was a sort of trope often found in a certain genre of videos. That being documentaries, news segments, video essays, etc. A tedious part of video editing is clipping the beginning and endings from videos The purpose was to fire off this script on a batch of YouTube links while I was working on more important segments of the video and the clips would then auto-generate.
+This Python script searches through the subtitles of a YouTube video and collects data on keywords. Also, and more importantly, downloads the video and cuts the video at the location - time interval - your keyword was found. My intent was to automate some of the more boring parts of video editing. Additionally, I noticed that this was a sort of trope often found in a certain genre of videos. That being documentaries, news segments, video essays, etc. A tedious part of video editing is clipping the beginning and endings from videos. The purpose was to fire off this script on a batch of YouTube links while I was working on more important segments of the video and the clips would then auto-generate.
 
 # How does it work & challenges
 
