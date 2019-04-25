@@ -12,6 +12,85 @@ body {
   color: #474747;
 }
 
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.project,
+.project-header {
+  padding-bottom: 15px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.project-date {
+  color: #777;
+  font-size: 13px;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.label-default {
+  background-color: #777;
+}
+
+.label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+.label-primary {
+  background-color: #337ab7;
+}
+
+.label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+.project-labels a,
+.project-labels a:hover {
+  text-decoration: none;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+}
+
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+}
+
+a {
+  background-color: transparent;
+}
+
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;

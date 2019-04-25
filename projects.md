@@ -1,6 +1,6 @@
 ---
-layout: "page"
-title: "Projects"
+layout: projects
+title: "Test"
 ---
 
 [YouTube Search](<https://github.com/jakemcannon/YouTubeSearch>)
