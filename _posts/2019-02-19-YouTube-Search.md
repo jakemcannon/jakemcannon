@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "YouTube Search (My first project!)"
+title:  "YouTube Splicer (My first project!)"
 date:   2019-02-19 23:02:00 -0500
 categories: jekyll update
 ---
