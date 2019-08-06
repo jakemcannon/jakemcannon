@@ -2,7 +2,7 @@ I attended my schools hackathon, [OwlHacks](https://owlhacks.com/), in the Sprin
 
 
 
-![WavdxuN](assets/trashman/WavdxuN.png)
+![WavdxuN](_posts/assets/trashman/WavdxuN.png)
 
 
 
@@ -22,7 +22,7 @@ In short, for whatever reason, any ideas I have about projects that exist in the
 
 
 
-![MO-trash-opener-mark-likosky-940x5401](assets/trashman/MO-trash-opener-mark-likosky-940x5401.jpg)
+![MO-trash-opener-mark-likosky-940x5401](_posts/assets/trashman/MO-trash-opener-mark-likosky-940x5401.jpg)
 
 
 
@@ -58,7 +58,7 @@ Secondly, the Distance Matrix API was not efficient. It would take roughly 10 mi
 
 
 
-![Screen Shot 2019-05-19 at 2.14.14 PM](assets/trashman/Screen Shot 2019-05-19 at 2.14.14 PM.png)
+![Screen Shot 2019-05-19 at 2.14.14 PM](_posts/assets/trashman/Screen Shot 2019-05-19 at 2.14.14 PM.png)
 
 
 
