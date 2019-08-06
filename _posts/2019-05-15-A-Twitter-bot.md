@@ -11,7 +11,7 @@ I attended my schools hackathon, [OwlHacks](https://owlhacks.com/), in the Sprin
 It's no secret that Philadelphia has a public waste & litter problem; many know the overused Filth-adelphia moniker by now. The complaints of the current waste/litter state are almost as ubiquitous as the litter.
 
 - [Philadelphia is so dirty the city wants residents and business owners to help collect trash](https://www.philly.com/philly/news/pennsylvania/philadelphia/litter-philadelphia-trash-streets-department-recycle-20181019.html)
-- [Philly’s litter problem is no mystery. Why won’t City Hall step up and solve it? | Opinion](https://www.philly.com/philly/opinion/commentary/litter-street-sweeping-philadelphia-neighborhood-clean-up-20181005.html)
+- [Philly’s litter problem is no mystery. Why won’t City Hall step up and solve it? : Opinion](https://www.philly.com/philly/opinion/commentary/litter-street-sweeping-philadelphia-neighborhood-clean-up-20181005.html)
 - [Open Thread: How can Philly combat its litter problem?](https://philly.curbed.com/2018/10/25/18024402/open-thread-philly-trash-litter-waste)
 - [New map reveals the state of litter in Philly, block by block](https://philly.curbed.com/2018/2/15/17012334/philadelphia-litter-trash-index-map)
 - …..
