@@ -6,7 +6,7 @@ I attended my schools hackathon, [OwlHacks](https://owlhacks.com/), in the Sprin
 
 
 
-### Why Trash?
+## Why Trash?
 
 It's no secret that Philadelphia has a public waste & litter problem; many know the overused Filth-adelphia moniker by now. The complaints of the current waste/litter state are almost as ubiquitous as the litter.
 
@@ -26,7 +26,7 @@ In short, for whatever reason, any ideas I have about projects that exist in the
 
 
 
-### How does it work?
+## How does it work?
 
 This project was relatively simple. For me, this project was a light introduction to some technology, such as databases and API's that I plan to learn over the summer.
 
@@ -36,7 +36,7 @@ This project was relatively simple. For me, this project was a light introductio
 - Calculates the shortest distance from them to the nearest public waste bin
 - Returns the Google Maps walking route to the user
 
-####In more detail the app does the following:
+#### In more detail the app does the following:
 
 The inital blueprint for the project was to use the Twitter API and Google Maps API to perform the apps main objective. However, in the end, the Google Maps api was not needed for reasons I will touch on later.
 
@@ -74,7 +74,7 @@ So, my intention was to use Google Maps API to abstract this complexity away. Bu
 
 
 
-### Conclusion
+##  Conclusion
 
 In the end I am not optimistic that this bot will solve Philly's waste problems or that the bot will even be used.
 
