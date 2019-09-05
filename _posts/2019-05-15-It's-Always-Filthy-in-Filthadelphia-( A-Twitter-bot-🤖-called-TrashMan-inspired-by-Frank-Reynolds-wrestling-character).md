@@ -22,7 +22,7 @@ It's no secret that Philadelphia has a public waste & litter problem; many know 
 - [New map reveals the state of litter in Philly, block by block](https://philly.curbed.com/2018/2/15/17012334/philadelphia-litter-trash-index-map)
 - …..
 
-At the current time of this blog post, the current backlash, [Philadelphia’s new version of street sweeping is…dusty](https://billypenn.com/2019/04/17/philadelphias-new-version-of-street-sweeping-is-dusty/), involves the new trash blower program. That is, to clean the streets of debris in place of street sweepers as Philadelphians can't be bothered to move their vehicles. 
+At the current time of this blog post, the current backlash, [Philadelphia’s new version of street sweeping is…dusty](https://billypenn.com/2019/04/17/philadelphias-new-version-of-street-sweeping-is-dusty/), involves the new trash blower program. That is, to clean the streets of debris with leaf blowers in place of street sweepers as Philadelphians can't be bothered to move their vehicles. 
 
 In short, for whatever reason, any ideas I have about projects that exist in the realm of public service always revolve around waste management or litter. Not to mention, public trash pickup has been trending lately evident by things like the viral [#trashtag](https://www.forbes.com/sites/trevornace/2019/03/12/trashtag-challenge-goes-viral-as-people-share-beforeafter-photos-of-their-cleanup/#22e64e3a95e8) challenge making the rounds on Twitter and Reddit.
 
