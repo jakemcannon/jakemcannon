@@ -1,5 +1,3 @@
-# 100 Days of JavaScript
-
 I'm feeling inspired to learn JavaScript, a language I often curse, after feeling undispired with Python. Sure, there is much more nuances to learn about Python, but, at the moment I don't fell particuallry challenged with learning the language. I have built some small scripts, a REST API, etc. and I don't really care to go down the data science rabbit whole. Hopefully, after learning JavaScript I can create MVP's and full stack web apps more quickly.
 
 
