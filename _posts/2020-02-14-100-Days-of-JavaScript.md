@@ -30,3 +30,11 @@ The optimistic project I would like to build is a *100 days of X* web app that a
 
 
 
+
+
+### Week 1:
+
+
+
+I believe it has only been 3 days but the programming is coming along well. I have neally completed the generator project. The majority of the app is done. Anything remaing is tests or things such as Docker and cloud hosting. this small project actually turned out to be fun and helpful as it allows you to tinker with a large bredth of technologies/modern software life cycles without a large cumbersome web app. Less chance of getting stuck in configuration hell.
+

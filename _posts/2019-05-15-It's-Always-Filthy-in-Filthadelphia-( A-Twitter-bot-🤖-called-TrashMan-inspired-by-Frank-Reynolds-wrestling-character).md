@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "It's Always Filthy in Filthadelphia : A Twitter bot 🤖 called TrashMan inspired by Frank Reynolds wrestling character"
+title: "It's Always Filthy in Filthadelphia"
 date: 2019-05-15
 categories: jekyll update
 ---
