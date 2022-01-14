@@ -5,6 +5,8 @@ layout: page
 
 
 
+<img src="/assets/IMG_6279.JPG">
+
 I'm a current senior at [Temple University](https://www.temple.edu/) working on a Bachelor's degree in Computer Science.
 
 In class, I'm currently studying Project Design as well as Data Science. Outside of class I'm currently studying <code>Python</code>, <code>Flask</code>, <code>PostgreSQL</code>, REST principles, and many other things backend related.
