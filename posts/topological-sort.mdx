@@ -1,0 +1,42 @@
+---
+title: Topological Sort
+tags:
+  - topological-sort
+date: 2020-05-09
+excerpt: Post about topsort (need to delete this soon)
+---
+
+- If you need to "detect a cycle in a directed graph" this should be your go to problem
+- I learned this simplification from Colin Galen video[0]
+
+# Def:
+
+- Its not a graph but an _ordering_ of a graph
+- Common verbiage to use with the pattern is: for every directed edge `edge(u, v)` `U` comes before `V` in the ordering
+
+### A very nice pattern and terminology for thinking about topsort
+
+Source:
+Sink:
+
+TODO: This algo has a name. Something starting with a C
+
+### WIP
+
+source
+sink
+
+### pseudo code
+
+Find the source(s) first and start building your linear ordering with these first source(s). Remove these sources, their direct children, will become the next sources. Repeat.
+
+1. Initialization
+
+- Build an adjacency list graph -> {}
+- Build a "in-degree" frequency hashmap
+
+2.
+
+---
+
+[0] https://youtu.be/vVGijfGK_dI?t=1943
