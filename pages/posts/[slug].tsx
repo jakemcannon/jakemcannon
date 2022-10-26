@@ -1,5 +1,4 @@
 import type { GetStaticProps, GetStaticPaths } from "next";
-import Image from "next/image";
 import Head from "next/head";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
@@ -21,7 +20,7 @@ export default function PostPage({ post }: { post: MDXPost }) {
         <title>{post.meta.title}</title>
       </Head>
       <h1>{post.meta.title}</h1>
-      <MDXRemote {...post.source} components={{ Image }} />
+      <MDXRemote {...post.source} />
     </>
   );
 }
