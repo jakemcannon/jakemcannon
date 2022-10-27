@@ -1,0 +1,40 @@
+---
+title: Find Greatest Common Divisor of Array
+tags:
+  - gcd
+  - math
+date: 2022-10-26
+---
+
+- Canonical GCD problem
+- Simple [[GCD]] function where the inputs `a` and `b` are the `min()` and `max()` from some array.
+
+### Solution
+
+You can calculate the GCD of two numbers like the following
+
+```python
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a%b)
+```
+
+Now just get the `min` and `max` from the input array.
+
+### Code
+
+```python
+def solve(arr):
+
+    a = max(arr)
+    b = min(arr)
+
+    while a:
+        if b == 0:
+            break
+        a = b
+        b = a % b
+
+    return a
+```

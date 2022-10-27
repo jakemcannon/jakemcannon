@@ -1,0 +1,42 @@
+---
+title: Sum of Number and Its Reverse
+tags:
+date: 2022-10-26
+---
+
+### Solution
+
+For the input num you will have many `x` + `y` that `==` the given number. Just implement it, try all sets of `x` and `y`. I will use an example with `num = 11` below.
+
+Notice that after the value halfway between `1` and `num`, the `x` and `y` pairs are the same but reversed. This means we can limit the problem to only half the range. Either `range(1, num//2)` or `range(num//2, num+1)`.
+
+```
+1, 10
+2, 9
+3, 8
+4, 7
+5, 6
+--- middle ---
+6, 5
+7, 4
+8, 3
+9, 2
+10, 1
+```
+
+We can simply loop from the `range(num//2, num+1)` and reverse every num. Then, check that `current_value` + `reversed_value` == `num` .
+
+### Code
+
+```python
+def solve(num):
+    if num == 0:
+        return True
+    if num == 1:
+        return False
+    for x in range(num//2, num+1):
+        x_rev = int(str(x)[::-1])
+        if x + x_rev == num:
+            return True
+    return False
+```
