@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="container">
       <Head>
-        <title>Leigh's Blog</title>
+        <title>Jake Cannon</title>
       </Head>
       <nav>
         <Link href="/">/home</Link>
