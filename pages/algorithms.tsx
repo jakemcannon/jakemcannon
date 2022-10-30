@@ -13,7 +13,8 @@ function Algorithms({ posts }: { posts: PostMeta[] }) {
 export async function getStaticProps() {
     const posts = getAllPosts()
       .slice(0, 9)
-      .map((post) => post.meta);
+      .filter((post) => post.meta.directory === "problems")
+      .map((post) => post.meta)
   
     return { props: { posts } };
   }
