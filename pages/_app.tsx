@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <nav>
         <Link href="/">/home</Link>
+        <Link href="/algorithms">/algorithms</Link>
       </nav>
       <Component {...pageProps} />
     </div>
