@@ -28,6 +28,13 @@ export const getAllPosts = () => {
   return posts;
 };
 
+export const getAllTags = () => {
+  const posts = getSlugs();
+  const tags = new Set(posts.map((slug) => getTagsFromSlug(slug)).flat());
+  const allTags = Array.from(tags);
+  return allTags;
+};
+
 interface Post {
   content: string;
   meta: PostMeta;
@@ -55,7 +62,15 @@ export const getPostFromSlug = (slug: string): Post => {
       title: data.title ?? slug,
       tags: (data.tags ?? []).sort(),
       date: (data.date ?? new Date()).toString(),
-      directory: data.directory ?? ""
+      directory: data.directory ?? "",
     },
   };
+};
+
+export const getTagsFromSlug = (slug: string): any => {
+  const postPath = path.join(POSTS_PATH, `${slug}.mdx`);
+  const source = fs.readFileSync(postPath);
+  const { data } = matter(source);
+
+  return data.tags ?? [];
 };
