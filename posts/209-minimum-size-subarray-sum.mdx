@@ -1,0 +1,49 @@
+---
+title: Minimum Size Subarray Sum
+directory: problems
+tags:
+  - sliding-window
+date: 2022-11-06
+---
+
+### Solution
+
+- Have a right pointer, called `end` in this case, that represents the end of the sliding window. This pointer is dumb, it moves by a step of one on every iteration and helps us build up a `running_sum`
+- Have a left pointer, called `start` in this case, that represents the beginning of the sliding window
+- The trick is realizing that you need a while loop inside your for loop to bring the `start` pointer forward
+- As we shrink our window from the beginning, we also subtract from the `running_sum`
+
+Consider this example to see why you need a while loop:
+
+```
+target: 11
+nums: [1,1,1,1,10]
+```
+
+- For sliding window problems, it is quite common to take a `max` or `min` based on the range of your indices such as `end - start + 1`
+
+### Code
+
+```python
+class Solution:
+    def minSubArrayLen(self, target, nums):
+
+        result = math.inf
+
+        start = 0
+        running_sum = 0
+
+        for end in range(len(nums)):
+            running_sum += nums[end]
+
+            while running_sum >= target:
+                result = min(result, end-start+1)
+                running_sum -= nums[start]
+                start += 1
+
+        if result == math.inf:
+            return 0
+
+        return result
+
+```
