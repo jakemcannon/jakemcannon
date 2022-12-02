@@ -4,6 +4,8 @@ import Head from "next/head";
 
 import { ChakraProvider } from "@chakra-ui/react";
 
+import { theme } from "../theme";
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="container">
@@ -15,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Link href="/algorithms">/algorithms</Link>
         <Link href="/patterns">patterns</Link>
       </nav>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <Component {...pageProps} />
       </ChakraProvider>
     </div>
