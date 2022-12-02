@@ -9,9 +9,13 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",
     "@next/mdx": "^13.0.0",
+    "framer-motion": "^6.5.1",
     "glob": "^7.2.0",
     "gray-matter": "^4.0.3",
     "next": "^12.3.1",
