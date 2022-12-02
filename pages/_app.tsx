@@ -1,7 +1,8 @@
 import type { AppProps } from "next/app";
 import Link from "next/link";
 import Head from "next/head";
-import "@/styles/globals.css";
+
+import { ChakraProvider } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,7 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Link href="/algorithms">/algorithms</Link>
         <Link href="/patterns">patterns</Link>
       </nav>
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </div>
   );
 }
