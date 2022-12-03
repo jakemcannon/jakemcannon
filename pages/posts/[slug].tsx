@@ -15,13 +15,13 @@ interface MDXPost {
 
 export default function PostPage({ post }: { post: MDXPost }) {
   return (
-    <>
+    <div className="mdx-prose">
       <Head>
         <title>{post.meta.title}</title>
       </Head>
       <h1>{post.meta.title}</h1>
       <MDXRemote {...post.source} />
-    </>
+    </div>
   );
 }
 
