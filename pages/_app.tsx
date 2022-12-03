@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { Box, Center, ChakraProvider, Flex } from "@chakra-ui/react";
 
 import { theme } from "../theme";
-import SideBar from "@/src/components/SideBar";
+import SideBar from "@/src/components/SideBar/SideBar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
