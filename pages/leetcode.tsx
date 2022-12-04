@@ -11,7 +11,7 @@ function computeBackgroundColor(difficulty: string) {
   return "green.500";
 }
 
-function Algorithms() {
+function Leetcode() {
   return (
     <>
       <Grid templateColumns="repeat(15, 1fr)" gap={2}>
@@ -48,4 +48,4 @@ function Algorithms() {
   );
 }
 
-export default Algorithms;
+export default Leetcode;

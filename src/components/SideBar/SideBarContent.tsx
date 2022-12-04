@@ -9,7 +9,7 @@ interface LinkItemProps {
 
 const LinkItems: Array<LinkItemProps> = [
   { name: "Home", route: "/" },
-  { name: "Algorithms", route: "/algorithms" },
+  { name: "Leetcode", route: "/leetcode" },
   { name: "Patterns", route: "/patterns" },
 ];
 
