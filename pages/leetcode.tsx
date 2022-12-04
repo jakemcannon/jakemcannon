@@ -24,7 +24,7 @@ function Leetcode() {
               aria-label="A tooltip"
             >
               {question.hasEditorial ? (
-                <Link href={`posts/${question.titleSlug}`}>
+                <Link href={`posts/${question.id + "-" + question.titleSlug}`}>
                   <GridItem
                     w="100%"
                     h="10"
