@@ -1,5 +1,3 @@
-import { getAllPosts, PostMeta } from "@/src/api";
-import Articles from "@/src/components/articles";
 import { Grid, GridItem, Link, Tooltip } from "@chakra-ui/react";
 
 import questionMetaData from "../src/questions.json";
@@ -13,7 +11,7 @@ function computeBackgroundColor(difficulty: string) {
   return "green.500";
 }
 
-function Algorithms({ posts }: { posts: PostMeta[] }) {
+function Algorithms() {
   return (
     <>
       <Grid templateColumns="repeat(15, 1fr)" gap={2}>
@@ -46,18 +44,8 @@ function Algorithms({ posts }: { posts: PostMeta[] }) {
           );
         })}
       </Grid>
-      {/* <Articles posts={posts} /> */}
     </>
   );
-}
-
-export async function getStaticProps() {
-  const posts = getAllPosts()
-    .slice(0, 9)
-    .filter((post) => post.meta.directory === "problems")
-    .map((post) => post.meta);
-
-  return { props: { posts } };
 }
 
 export default Algorithms;
