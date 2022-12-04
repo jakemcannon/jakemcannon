@@ -1390,7 +1390,7 @@
         "difficulty": "Medium",
         "title": "Binary Tree Right Side View",
         "titleSlug": "binary-tree-right-side-view",
-        "hasEditorial": false
+        "hasEditorial": true
     },
     {
         "id": 200,
