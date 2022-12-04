@@ -9,7 +9,7 @@ export const theme = extendTheme({
   },
   fonts: {
     body: "system-ui",
-    heading: "Georgia, serif",
+    heading: "system-ui",
     mono: "Menlo, monospace",
   },
   styles: {

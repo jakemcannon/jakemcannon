@@ -3,6 +3,8 @@ import Head from "next/head";
 import { getAllPosts, PostMeta } from "@/src/api";
 import Articles from "@/src/components/articles";
 
+import { Heading } from "@chakra-ui/react";
+
 export default function TagPage({
   slug,
   posts,
@@ -15,7 +17,9 @@ export default function TagPage({
       <Head>
         <title>Tag: {slug}</title>
       </Head>
-      <h1>Tag: {slug}</h1>
+      <Heading as="h3" size="lg">
+        Tag: {slug}
+      </Heading>
       <Articles posts={posts} />
     </>
   );
@@ -28,7 +32,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   return {
     props: {
       slug,
-      posts: posts.map((post) => post.meta),
+      posts: posts
+        .map((post) => post.meta)
+        .sort(
+          (a: PostMeta, b: PostMeta) =>
+            Number(new Date(a.date)) - Number(new Date(b.date))
+        ),
     },
   };
 };
