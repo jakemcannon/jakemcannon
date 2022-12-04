@@ -31,7 +31,7 @@ export const getAllPosts = () => {
 export const getAllTags = () => {
   const posts = getSlugs();
   const tags = new Set(posts.map((slug) => getTagsFromSlug(slug)).flat());
-  const allTags = Array.from(tags);
+  const allTags = Array.from(tags).sort();
   return allTags;
 };
 
