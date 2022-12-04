@@ -1,4 +1,4 @@
-import { Grid, GridItem, Link, Tooltip } from "@chakra-ui/react";
+import { Center, Grid, GridItem, Link, Tooltip } from "@chakra-ui/react";
 
 import questionMetaData from "../src/questions.json";
 
@@ -32,12 +32,12 @@ function Leetcode() {
                     border="1px"
                     borderRadius={2}
                   >
-                    {question.id}
+                    <Center h="10">{question.id}</Center>
                   </GridItem>
                 </Link>
               ) : (
                 <GridItem w="100%" h="10" border="1px" borderRadius={2}>
-                  {question.id}
+                  <Center h="10">{question.id}</Center>
                 </GridItem>
               )}
             </Tooltip>
