@@ -1,0 +1,64 @@
+---
+title: Parallel courses
+directory: problems
+tags:
+  - topological-sort
+date: 2022-12-19
+---
+
+### Prerequisite
+
+- [binary-tree-level-order-traversal](/posts/102-binary-tree-level-order-traversal)
+- [course-schedule](/posts/207-course-schedule)
+
+### Solution
+
+- Quite similar to [course-schedule](/posts/207-course-schedule).
+- Use [[khans-algorithm]]
+- The idea is to have a counter. Make sure not to increment a counter for every node that has an in degree of 0. At any point in the DAG,
+  there could be 1 to n nodes that have an in degree of 0. Think of it as _Process all nodes that have an in-degree of 0 as one group_ and give that entire group a count of one only.
+- Make sure to catch the edge case if there is a cycle.
+
+### Code
+
+```python
+class Solution:
+    def minimumSemesters(self, n, relations):
+        in_count = {}
+        adj_list = {}
+
+        for i in range(1, n+1):
+            in_count[i] = 0
+            adj_list[i] = []
+
+        for parent, child in relations:
+            in_count[child] += 1
+            adj_list[parent].append(child)
+
+        q = collections.deque()
+
+        for k, v in in_count.items():
+            if v == 0:
+                q.append(k)
+
+        result = 0
+        course_count = 0
+
+        while q:
+
+           _len = len(q)
+
+           for _ in range(_len):
+               cur = q.popleft()
+               course_count += 1
+               for child in adj_list[cur]:
+                   in_count[child] -= 1
+                   if in_count[child] == 0:
+                       q.append(child)
+           result += 1
+
+        if course_count != n:
+            return -1
+
+        return result
+```
