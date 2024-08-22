@@ -13,14 +13,14 @@
 <p>Let's simulate it. Here is what a notification might look like for a passing script</p>
 <pre>
   <code>
-    sleep 30 && curl -H prio:low -d "Laptop backup succeeded" ntfy.sh/jc13test || curl -H tags:warning -H prio:high -d "Laptop backup failed" ntfy.sh/jc13test
+    sleep 30 && curl -H prio:low -d "Laptop backup succeeded" ntfy.sh/YOUR_TOPIC || curl -H tags:warning -H prio:high -d "Laptop backup failed" ntfy.sh/jc13test
   </code>
 </pre>
 
 <p>Here is what a notification might look like for a failing script</p>
 <pre>
   <code>
-    false && curl -H prio:low -d "Laptop backup succeeded" ntfy.sh/jc13test || curl -H tags:warning -H prio:high -d "Laptop backup failed" ntfy.sh/jc13test
+    false && curl -H prio:low -d "Laptop backup succeeded" ntfy.sh/YOUR_TOPIC || curl -H tags:warning -H prio:high -d "Laptop backup failed" ntfy.sh/jc13test
   </code>
 </pre>
 
