@@ -1,0 +1,27 @@
+<p>
+  ntfy.sh is a cool tool for sending push notifications for your mobile device.
+  Here is a guide on how to send notificaitons for long running scripts you execute in your shell
+</p>
+<p>
+  <ol>
+    <li>Download the app</li>
+    <li>Create a "topic" within the app</li>
+    <li>Using curl, send a request to your topic. e.g. <code>curl https://ntfy.sh/YOUR_TOPIC</code> </li>
+  </ol>
+</p>
+
+<p>Let's simulate it. Here is what a notification might look like for a passing script</p>
+<pre>
+  <code>
+    sleep 30 && curl -H prio:low -d "Laptop backup succeeded" ntfy.sh/jc13test || curl -H tags:warning -H prio:high -d "Laptop backup failed" ntfy.sh/jc13test
+  </code>
+</pre>
+
+<p>Here is what a notification might look like for a failing script</p>
+<pre>
+  <code>
+    false && curl -H prio:low -d "Laptop backup succeeded" ntfy.sh/jc13test || curl -H tags:warning -H prio:high -d "Laptop backup failed" ntfy.sh/jc13test
+  </code>
+</pre>
+
+<p>Great, now just replace <code>sleep 30</code> or <code>false</code> with your script. e.g. <code>test.py</code>  </p>
