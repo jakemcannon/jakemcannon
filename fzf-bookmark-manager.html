@@ -1,8 +1,23 @@
-<p>At work there are a lot of (sub)domains for all the different platforms. Internal tenant platform, internal email platform, internal azure group management platform, internal ci/cd platform, internal docs, this specialized tool, that specialized tool, etc. </p>
-<p>Some I have ready at the end of finger tips but many require me to <em>bother</em> someone for the link again or go searching in the blazingly fast Confluence site for the domain.</p>
-<p>Why don&#39;t we load all those domains in to a csv file and then create a shell function for searching and opening that site in the browser?</p>
+<p>
+  At work there are a lot of (sub)domains for all the different platforms.
+  Internal tenant platform, internal email platform, internal azure group
+  management platform, internal ci/cd platform, internal docs, this specialized
+  tool, that specialized tool, etc.
+</p>
+<p>
+  Some I have ready at the end of finger tips but many require me to
+  <em>bother</em> someone for the link again or go searching in the blazingly
+  fast Confluence site for the domain.
+</p>
+<p>
+  Why don&#39;t we load all those domains in to a csv file and then create a
+  shell function for searching and opening that site in the browser?
+</p>
 <h3 id="our-example-file">Our example file</h3>
-<p>I won&#39;t use the <code>links.csv</code> I use at work but here is a simple example using some company domains. Place this file in your root directory</p>
+<p>
+  I won&#39;t use the <code>links.csv</code> I use at work but here is a simple
+  example using some company domains. Place this file in your root directory
+</p>
 <p>links.csv</p>
 <pre><code>description, domain
 airbnb, http<span class="hljs-variable">s:</span>//www.airbnb.<span class="hljs-keyword">com</span>/
@@ -10,9 +25,13 @@ apple, http<span class="hljs-variable">s:</span>//www.apple.<span class="hljs-ke
 apple music, http<span class="hljs-variable">s:</span>//music.apple.<span class="hljs-keyword">com</span>/us/<span class="hljs-keyword">browse</span>,
 aws, http<span class="hljs-variable">s:</span>//aws.amazon.<span class="hljs-keyword">com</span>
 aws docs, http<span class="hljs-variable">s:</span>//docs.aws.amazon.<span class="hljs-keyword">com</span>/<span class="hljs-built_in">index</span>.html
-</code></pre><h3 id="shell-function">shell function</h3>
+</code></pre>
+<h3 id="shell-function">shell function</h3>
 <pre><code class="lang-shell"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">li</span> {</span>
     column -t -s=<span class="hljs-string">","</span> ~/links.csv | <span class="hljs-built_in">sort</span> | fzf | awk -F <span class="hljs-string">' '</span> <span class="hljs-string">'{print $2}'</span> | xargs <span class="hljs-built_in">open</span>
 }
 </code></pre>
-<p>Now you can push it to your internal version control and send it to colleagues.</p>
+<p>
+  Now you can push it to your internal version control and send it to
+  colleagues.
+</p>
